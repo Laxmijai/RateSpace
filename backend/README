@@ -1,0 +1,17 @@
+# RateSpace
+
+RateSpace is a store rating platform built using the MERN stack.
+
+## Features
+
+- User registration and login
+- Role-based access for admins, customers and store owners
+- Store search and ratings
+- Admin and store-owner dashboards
+
+## Technology
+
+- React
+- Node.js
+- Express.js
+- MongoDB
