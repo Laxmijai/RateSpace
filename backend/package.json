@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "RateSpace is a store rating platform built using the MERN stack.",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
   "dev": "nodemon src/server.js",
-  "start": "node src/server.js"
+  "start": "node src/server.js",
+  "create-admin": "node src/scripts/createAdmin.js"
 },
   "keywords": [],
   "author": "",

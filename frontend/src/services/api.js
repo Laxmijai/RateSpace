@@ -20,7 +20,12 @@ export async function apiRequest(
     headers,
     body: body === undefined ? undefined : JSON.stringify(body),
   });
-
+  if (
+  response.status === 401 &&
+  !endpoint.startsWith("/auth/")
+) {
+  window.dispatchEvent(new Event("ratespace:session-expired"));
+}
   const data = await response.json().catch(() => ({}));
 
   if (!response.ok) {
